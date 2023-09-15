@@ -22,11 +22,11 @@ public class SearchSelenideTest {
 
         $("#wiki-tab").click();
 
-        $("#wiki-pages-filter").setValue("SoftAssertions");
+        $("#wiki-pages-filter").setValue("Soft");
 
-        $(byText("Soft assertions")).shouldHave(text("Soft assertions"));
+        $("#wiki-pages-box").shouldHave(text("SoftAssertions"));
 
-        open("/selenide/selenide/wiki/SoftAssertions");
+        $("#wiki-pages-box").$(byText("SoftAssertions")).click();
 
         $(".markdown-body").shouldHave(text("@ExtendWith({SoftAssertsExtension.class})\n" +
                 "class Tests {\n" +
