@@ -16,7 +16,7 @@ public class DragnDropTest {
     }
 
     @Test
-    void ddTestv1() {
+    void dragnDropTest() {
 
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-a").$("header").shouldHave(text("A"));

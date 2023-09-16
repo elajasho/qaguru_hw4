@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class HoverGitTest {
 
     @Test
-    void hoverTest() {
+    void hoverGitTest() {
         open("https://github.com/");
         $(byText("Solutions")).hover();
         $(byText("Enterprise")).click();
